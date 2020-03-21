@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchropane" prefHeight="400.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.Med">
+   <children>
+      <ImageView fx:id="anchropane" fitHeight="400.0" fitWidth="536.0" layoutX="57.0" pickOnBounds="true" preserveRatio="true" scaleX="1.3">
+         <image>
+            <Image url="@Win.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="homeBtn" layoutX="20.0" layoutY="322.0" mnemonicParsing="false" onMouseClicked="#homeBtnAction" opacity="0.76" style="-fx-background-color: #000000;" text="Home" textFill="WHITE">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Snap ITC" size="31.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

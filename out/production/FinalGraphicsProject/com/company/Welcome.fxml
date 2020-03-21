@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="493.0" prefWidth="818.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.WelcomeController">
+   <children>
+      <ImageView fitHeight="606.0" fitWidth="657.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5">
+         <image>
+            <Image url="@background.jpg" />
+         </image>
+      </ImageView>
+      <Label contentDisplay="BOTTOM" graphicTextGap="7.0" layoutX="54.0" layoutY="149.0" prefHeight="71.0" prefWidth="363.0" text="Welcome To" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Snap ITC" size="54.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="NE_RESIZE" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+
+               </light>
+            </Lighting>
+         </effect>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.6238095238095238" startY="0.8142857142857143">
+               <stops>
+                  <Stop color="#f80000" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="54.0" layoutY="220.0" text="Math Chess Game">
+         <font>
+            <Font name="Snap ITC" size="54.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.8047619047619048" startY="0.8142857142857143">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="statrtBtn" layoutX="317.0" layoutY="379.0" mnemonicParsing="false"  onMouseClicked="#startBtnAction" opacity="0.55" prefHeight="58.0" prefWidth="185.0" style="-fx-background-color: #000000;" text="Start" textFill="WHITE">
+         <font>
+            <Font name="Snap ITC" size="34.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
